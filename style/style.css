@@ -1,0 +1,64 @@
+@font-face {
+    font-family: bebasNeue;
+    src: url(../assets/BebasNeue-Regular.ttf);
+}
+
+/* Background animation is an experiment. Feel free to replace
+animation styling with something more attractive.*/
+@keyframes backgroundAnimation {
+    from {background-color: lime};
+    to {background-color: yellow};
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: yellow;
+    animation: backgroundAnimation 5s;
+}
+
+nav {
+    position: absolute;
+    float: left;
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+    font-family: bebasNeue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+nav h1 {
+    position: relative;
+    float: left;
+    top: -30px;
+    left: 10px;
+}
+
+nav ul {
+    position: relative;
+    float: left;
+    left: 150px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+    top: -30px;
+    left: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
