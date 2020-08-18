@@ -3,30 +3,36 @@
     src: url(../assets/BebasNeue-Regular.ttf);
 }
 
-/* Background animation is an experiment. Feel free to replace
-animation styling with something more attractive.*/
-@keyframes backgroundAnimation {
-    from {background-color: lime};
-    to {background-color: yellow};
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+#contentWrap {
+    padding-bottom: 2.5rem;
 }
 
 body {
     position: relative;
     margin: 0;
     padding: 0;
-    background: yellow;
-    animation: backgroundAnimation 5s;
+    background-image: url(../assets/church-hill.jpg);
+    background-size: cover;
+    background-color: white;
+    z-index: 1;
 }
 
 nav {
     position: absolute;
+    top: 0;
     float: left;
     height: 80px;
     width: 100%;
-    background-color: blue;
+    background-color: red;
     font-family: bebasNeue;
     font-size: xx-large;
     font-weight: bolder;
+    z-index: 2;
 }
 
 nav h1 {
@@ -34,6 +40,7 @@ nav h1 {
     float: left;
     top: -30px;
     left: 10px;
+    z-index: 2;
 }
 
 nav ul {
@@ -42,6 +49,7 @@ nav ul {
     left: 150px;
     list-style: none;
     text-decoration: none;
+    z-index: 2;
 }
 
 nav ul li {
@@ -52,13 +60,37 @@ nav ul li {
     list-style-type: none;
     text-decoration: none;
     padding: 20px 20px 20px 20px;
+    z-index: 2;
 }
 
 nav ul li a {
     text-decoration: none;
+    z-index: 2;
 }
 
 nav ul li a:visited {
     text-decoration: none;
     color: black;
+    z-index: 2;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: red;
+    font-family: "bebasNeue";
+    padding: 20px 0px 40px 0px;
+    z-index: 2;
+}
+
+footer h2 {
+    position: relative;
+    float: left;
+}
+
+footer p {
+    position: relative;
+    float: right;
 }
