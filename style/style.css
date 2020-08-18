@@ -3,13 +3,10 @@
     src: url(../assets/BebasNeue-Regular.ttf);
 }
 
-#pageContainer {
-    position: relative;
-    min-height: 100vh;
-}
 
-#contentWrap {
-    padding-bottom: 2.5rem;
+
+.iconCredit {
+    float: left;
 }
 
 body {
@@ -19,7 +16,12 @@ body {
     background-image: url(../assets/church-hill.jpg);
     background-size: cover;
     background-color: white;
+    background-repeat: no-repeat;
     z-index: 1;
+}
+
+a:visited {
+    color: black;
 }
 
 nav {
@@ -93,4 +95,27 @@ footer h2 {
 footer p {
     position: relative;
     float: right;
+}
+
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+#contentWrap {
+    padding-bottom: 2.5rem;
+}
+
+#searchHeader {
+    position: relative;
+    top: 40px;
+    float: left;
+    font-family: "bebasNeue";
+    color: wheat;
+}
+
+#iconBar {
+    position: relative;
+    padding-left: 500px;
+    float: left;
 }
