@@ -6,7 +6,10 @@
 
 
 .iconCredit {
+    position: relative;
+    left: 50%;
     float: left;
+    font-size: smaller;
 }
 
 body {
@@ -94,7 +97,9 @@ footer h2 {
 
 footer p {
     position: relative;
-    float: right;
+    left: 40%;
+    float: left;
+    font-size: smaller;
 }
 
 #pageContainer {
@@ -108,7 +113,9 @@ footer p {
 
 #searchHeader {
     position: relative;
-    top: 40px;
+    top: 200px;
+    padding: 0;
+    margin: 0;
     float: left;
     font-family: "bebasNeue";
     color: wheat;
