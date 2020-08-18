@@ -64,19 +64,24 @@ nav ul li {
     left: 20px;
     list-style-type: none;
     text-decoration: none;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     z-index: 2;
 }
 
 nav ul li a {
     text-decoration: none;
     z-index: 2;
+    
 }
 
 nav ul li a:visited {
     text-decoration: none;
     color: black;
     z-index: 2;
+}
+
+ul li img:hover{
+    border-bottom: solid black 5px;
 }
 
 footer {
@@ -123,6 +128,6 @@ footer p {
 
 #iconBar {
     position: relative;
-    padding-left: 500px;
-    float: left;
+    top: 0;
+    right: 0;
 }
